@@ -4,10 +4,10 @@ using RealEstate_API.Models.DapperContext;
 
 namespace RealEstate_API.Repositories.CategoryRepository
 {
-    public class CategoryRepository : ICategoryRepository
+    public class SqlCategoryRepository : ICategoryRepository
     {
         private readonly Context _context;
-        public CategoryRepository(Context context)
+        public SqlCategoryRepository(Context context)
         {
             _context = context;
         }

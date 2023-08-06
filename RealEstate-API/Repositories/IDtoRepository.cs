@@ -1,4 +1,4 @@
-﻿using RealEstate_API.Dtos.Interfaces;
+﻿using RealEstateCore.Dtos.Interfaces;
 
 namespace RealEstate_API.Repositories
 {

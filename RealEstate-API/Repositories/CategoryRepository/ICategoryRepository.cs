@@ -1,4 +1,4 @@
-﻿using RealEstate_API.Dtos.CategoryDtos;
+﻿using RealEstateCore.Dtos.CategoryDtos;
 
 namespace RealEstate_API.Repositories.CategoryRepository
 {

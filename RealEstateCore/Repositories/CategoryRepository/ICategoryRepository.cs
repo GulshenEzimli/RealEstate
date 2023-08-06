@@ -1,6 +1,6 @@
 ﻿using RealEstateCore.Dtos.CategoryDtos;
 
-namespace RealEstate_API.Repositories.CategoryRepository
+namespace RealEstateCore.Repositories.CategoryRepository
 {
     public interface ICategoryRepository : IDtoRepository<ResultCategoryDto>
     {

@@ -1,6 +1,6 @@
-﻿using RealEstate_API.Repositories.CategoryRepository;
+﻿using RealEstateCore.Repositories.CategoryRepository;
 
-namespace RealEstate_API.Repositories.UnitOfWork
+namespace RealEstateCore.Repositories.UnitOfWork
 {
     public interface IUnitOfWork
     {

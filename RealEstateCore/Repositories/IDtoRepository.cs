@@ -1,6 +1,6 @@
 ﻿using RealEstateCore.Dtos.Interfaces;
 
-namespace RealEstate_API.Repositories
+namespace RealEstateCore.Repositories
 {
     public interface IDtoRepository<T> where T : IDto
     {

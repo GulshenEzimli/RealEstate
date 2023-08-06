@@ -1,6 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using RealEstate_API.Repositories.UnitOfWork;
+﻿using Microsoft.AspNetCore.Mvc;
+using RealEstateCore.Repositories.UnitOfWork;
 
 namespace RealEstate_API.Controllers
 {

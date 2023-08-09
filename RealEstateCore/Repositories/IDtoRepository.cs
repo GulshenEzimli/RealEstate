@@ -8,5 +8,6 @@ namespace RealEstateCore.Repositories
         void Create(T dto);
         void Delete(int id);
         void Update(T dto); 
+        Task<T> GetById(int id);    
     }
 }

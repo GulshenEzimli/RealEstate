@@ -40,5 +40,12 @@ namespace RealEstate_API.Controllers
             _db.CategoryRepository.Update(dto);
             return Ok("Category updated successfully");
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var value = await _db.CategoryRepository.GetById(id);
+            return Ok(value);   
+        }
     }
 }

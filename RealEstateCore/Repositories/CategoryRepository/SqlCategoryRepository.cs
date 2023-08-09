@@ -50,11 +50,24 @@ namespace RealEstateCore.Repositories.CategoryRepository
             var parameters = new DynamicParameters();
             parameters.Add("@categoryName", dto.CategoryName);
             parameters.Add("@categoryStatus", dto.CategoryStatus);
-            parameters.Add("@categoryId", dto.Id);
+            parameters.Add("@categoryId", dto.CategoryId);
             using(var connection = new SqlConnection(_connectionString))
             {
                 await connection.ExecuteAsync(query,parameters);
             }
+        }
+
+        public async Task<ResultCategoryDto> GetById(int id)
+        {
+            string query = "select * from Category where CategoryId=@categoryId";
+            var parameters = new DynamicParameters();
+            parameters.Add("@categoryId", id);
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var value = await connection.QueryFirstOrDefaultAsync<ResultCategoryDto>(query, parameters);
+                return value;
+            }
+
         }
     }
 }

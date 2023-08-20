@@ -1,4 +1,5 @@
 ﻿using RealEstateCore.Repositories.CategoryRepository;
+using RealEstateCore.Repositories.ProductRepository;
 
 namespace RealEstateCore.Repositories.UnitOfWork
 {
@@ -10,5 +11,6 @@ namespace RealEstateCore.Repositories.UnitOfWork
             _connectionString = connectionString;
         }
         public ICategoryRepository CategoryRepository => new SqlCategoryRepository(_connectionString);
+        public IProductRepository ProductRepository => new SqlProductRepository(_connectionString);
     }
 }
